@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="outerbox">
+        <div class="innerbox" id="innerBox">
+            <header class="signup">
+                <h1>Sign Up</h1>
+            </header>
+            <main class="signup-body">
+                <form action="#" id="form">
+                    <p>
+                        <label for="fullname">Full name:</label>
+                        <div class="input-class">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="fullname" placeholder="Enter your name" required>
+                        </div>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <div class="input-class">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                    </p>
+
+                    <p>
+                        <label for="password">Password:</label>
+                        <div class="input-class">
+                            <i class="fa-solid fa-lock" id="passwordShow"></i>
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                        </div>
+                    </p>
+                    <p>
+                        <input type="submit" id="submit" value="Create account">
+                    </p>
+                </form>
+
+                <div class="circle c1"></div>
+                <div class="circle c2"></div>
+
+            </main>
+            <footer>
+                <p>
+                    <label for="check">Already have an account?</label>
+                    <a href="#">Login</a>
+                </p>
+            </footer>
+        </div>
+
+        
+
+    </div>
+
+    <div class="onComplete-div display-none" id="complete">
+        <div class="cross" id="cross">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div>
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div>
+            <h2>
+                Congratulations!! <br> <span id="inputName">Raj</span>
+            </h2>
+            <p>Your account has been created successfully!!</p>
+        </div>
+    </div>
+
+    
+    <script src="https://kit.fontawesome.com/1a46b5374a.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outerbox{
+    width: 100vw;
+    height: 100vh;
+    /* background: linear-gradient(to top left, rgb(84, 118, 152),rgb(58, 70, 154)); */
+    background: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: color-burn;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    text-align: center;
+}
+.innerbox{
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 40px;
+    background-color: rgba(117, 104, 104, 0.3);
+    border-radius: 8px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    color: white;
+    overflow: hidden;
+}
+.signup-body{
+    margin: 10px;
+}
+.signup-body p{
+    font-weight: bold;
+    margin: 5px;
+}
+.signup-body p label{
+    display: block;
+}
+
+.input-class{
+    background: rgba(255, 255, 255,0.2);
+    width:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    gap: 2px;
+    border-radius: 5px;
+
+}
+
+.input-class i{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+input{
+    background-color: transparent;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    caret-color: aliceblue;
+    caret-shape: 2px;
+    color: white;
+}
+input::selection{
+    background-color: transparent;
+}
+
+input::placeholder{
+    color: rgb(255, 254, 254);
+}
+.signup-body p input[type="submit"]{
+    background: #3cb6e3;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.signup-body p input[type="submit"]:hover{
+    background: #0b2a59;
+    cursor: pointer;
+}
+footer  p a{
+    text-decoration: none;
+    color: #02fadd;
+    font-weight: bold;
+    transition: font-size 0.3s;
+}
+footer  p a:hover{
+    font-size: 1.2rem;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(to right bottom,white ,rgba(190, 190, 190,0.2));
+    z-index: -1;
+}
+.c1{
+    top: -30px;
+    left: -30px;
+}
+.c2{
+    
+    bottom: -35px;
+    right: -35px;
+    background: linear-gradient(to bottom right,rgba(255, 255, 255,0.7) ,rgba(190, 190, 190,0.2));
+}
+
+.onComplete-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.3);
+    color: rgb(52, 48, 48);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.cross i{
+    position: absolute;
+    color: red;
+    font-size: 1.5rem;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.display-none{
+    display: none;
+}
+
+.onComplete-div .fa-circle-check{
+    color: #02fa27;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.onComplete-div h1{
+    margin-top: 20px;
+}
+
+#inputName{
+    color: #0282fa;
+    margin-top: 5px;
+}
+
+.onComplete-div p{
+    margin-top: 10px;
+}
